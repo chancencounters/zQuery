@@ -6,6 +6,7 @@ Some examples:
 
 * DOM Manipulation through methods like attr() allows you to get the value of an attribute for the first element in the set of matched elements or set an attribute for every matched element.
 
+``` Javascript
   attr(attrName, value) {
     if (value === undefined) {
       return this.each[0].getAttribute(attrName);
@@ -13,9 +14,11 @@ Some examples:
       this.each(node => node.setAttribute(attrName, value));
     }
   }
+```
 
 * DOM Traversal through methods like find, which gets the descendants of each element in the current set of matched elements filtered by a selector, DOMNodeCollection object or element.
 
+``` Javascript
   find(selector) {
     let foundNodes = [];
     this.each(node => {
@@ -24,9 +27,11 @@ Some examples:
     });
     return new DOMNodeCollection(foundNodes);
   }
+```
 
 * Perform asynchronous HTTP (AJAX) requests.
 
+``` Javascript
   $l.ajax = function (options) {
     const defaults = {
       method: "GET",
@@ -51,9 +56,11 @@ Some examples:
     };
     request.send(JSON.stringify(options.data));
   };
+```
 
 * Attach an event handler function for an event to the selected elements.
 
+``` Javascript
   on(eventName, callback ) {
     this.each(node => {
       node.addEventListener(eventName, callback);
@@ -64,3 +71,5 @@ Some examples:
       node[eventKey].push(callback);
     });
   }
+
+```
