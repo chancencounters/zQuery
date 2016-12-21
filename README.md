@@ -1,4 +1,4 @@
-= zQuery -- Lightweight JavaScript Library
+# zQuery -- Lightweight JavaScript Library
 
 zQuery is a fast and lightweight javascript library that makes things like HTML document traversal and manipulation, event handling and Ajax much easier.
 
