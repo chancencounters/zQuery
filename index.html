@@ -7,16 +7,25 @@
     </script>
   </head>
   <body>
-    <h1 class="title">zQuery</h1>
-    <div class="main-div">
-      <p>Test Paragraph</p>
-      <ul class="main-ul">
-        <li>Test1</li>
-        <li>Test2</li>
-        <li>Test3</li>
-      </ul>
+    <div class="header">
+      <h1 class="title">zQuery</h1>
+      <p>zQuery is a light-weight JavaScript library that makes DOM traversal, manipulation,
+      event handling and AJAX requests fun!</p>
     </div>
-    <div class="main-div">
+    <div class="event-handling">
+      <button id="event">EVENT</button>
+      <button id="on">ON</button>
+      <p>Click to add an event handler.</p>
+      <button id="off">OFF</button>
+      <p>Click to remove the event handler.</p>
     </div>
+
+    <script type="text/javascript">
+        $z(".on").on("click", () => {
+          $z(".event").on("click", () => {
+            alert("YOU CLICKED ME!")
+          })
+        })
+    </script>
   </body>
 </html>

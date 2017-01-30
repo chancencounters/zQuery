@@ -64,7 +64,7 @@ Some examples:
   on(eventName, callback ) {
     this.each(node => {
       node.addEventListener(eventName, callback);
-      const eventKey = `jqliteEvents-${eventName}`;
+      const eventKey = `${eventName}`;
       if (typeof node[eventKey] === "undefined") {
         node[eventKey] = [];
       }
