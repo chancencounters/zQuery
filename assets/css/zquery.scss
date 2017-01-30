@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, img,
+footer, header, hgroup, menu, nav, section, button {
+	display: block;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#event-handling {
+	height: calc(100vh - 76px);
+	background-size: cover;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+#event-handling p {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.header {
+  background: #587498;
+	padding: 20px;
+	overflow: hidden;
+  display: flex;
+  justify-content: center;
+  color: #97bf11;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#event {
+	height: 30px;
+	margin-bottom: 40px;
+	margin-right: 10px;
+	padding: 0 10px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	align-self: flex-end;
+	color: #fff;
+	cursor: pointer;
+	background: linear-gradient(to bottom, #ff9628 5%, #ff8714 100%);
+}
+
+#on {
+	height: 30px;
+	margin-bottom: 40px;
+	margin-right: 10px;
+	padding: 0 30px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	align-self: flex-end;
+	color: #fff;
+	cursor: pointer;
+	background: linear-gradient(to bottom, #ff9628 5%, #ff8714 100%);
+}
+
+#off {
+	height: 30px;
+	margin-bottom: 40px;
+	margin-right: 10px;
+	padding: 0 30px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	align-self: flex-end;
+	color: #fff;
+	cursor: pointer;
+	background: linear-gradient(to bottom, #ff9628 5%, #ff8714 100%);
+}

@@ -3,29 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>zQuery</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/zquery.scss"/>
     <script type="text/javascript" src="./lib/zquery.js">
     </script>
   </head>
   <body>
     <div class="header">
-      <h1 class="title">zQuery</h1>
-      <p>zQuery is a light-weight JavaScript library that makes DOM traversal, manipulation,
-      event handling and AJAX requests fun!</p>
+      <h1 class="title">zQuery Demo</h1>
     </div>
-    <div class="event-handling">
-      <button id="event">EVENT</button>
-      <button id="on">ON</button>
-      <p>Click to add an event handler.</p>
-      <button id="off">OFF</button>
-      <p>Click to remove the event handler.</p>
+
+    <div id="event-handling">
+      <button id="event">Mysterious Event</button>
+      <button id="on">On</button>
+      <button id="off">Off</button>
+    </div>
+
+    <div class="links">
+      <a class="github" href="https://github.com/zy101249/zQuery">GitHub</a>
+      <a class="portfolio" href="http://zackyu.com">Portfolio</a>
     </div>
 
     <script type="text/javascript">
-        $z(".on").on("click", () => {
-          $z(".event").on("click", () => {
-            alert("YOU CLICKED ME!")
+        $z("#on").on("click", () => {
+          $z("#event").on("click", () => {
+            $z("#event-handling").css("background-image", "url('assets/images/harambe.png')");
           })
         })
+
+        $z("#off").on("click", () => {
+          $z("#event").off("click");
+        })
+
+
     </script>
   </body>
 </html>
